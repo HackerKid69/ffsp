@@ -1,9 +1,18 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f2f2f2;
     text-align: center;
     padding: 50px;
     margin: 0;
+    animation: gradientAnimation 20s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background: linear-gradient(to right, #ffd8c7, #a5f3eb);
+    }
+    100% {
+        background: linear-gradient(to right, #a5f3eb, #ffd8c7);
+    }
 }
 
 .welcome-container {
@@ -21,4 +30,36 @@ h1 {
 
 p {
     color: #666;
+}
+
+#browser-selection {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5e4545;
+}
+
+#browser {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5e4545;
+    background: linear-gradient(to right, #ffd8c7, #a5f3eb);
+    color: #5e4545;
+    cursor: pointer;
+}
+
+#search-container {
+    margin-top: 20px;
+    display: none;
+}
+
+#search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #5e4545;
+    background: linear-gradient(to right, #ffd8c7, #a5f3eb);
+    color: #5e4545;
 }
