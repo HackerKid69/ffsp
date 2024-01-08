@@ -8,8 +8,24 @@
 </head>
 <body>
     <div class="welcome-container">
-        <h1>Welcome to Your Better Browsing Experience</h1>
+        <h1>Welcome to Your Better Browser</h1>
         <p>Explore the web with a new and improved browsing experience.</p>
+
+        <div id="browser-selection">
+            <label for="browser">Choose a browser:</label>
+            <select id="browser" onchange="showSearchBar()">
+                <option value="" selected disabled>Select a browser</option>
+                <option value="duckduckgo">DuckDuckGo</option>
+                <option value="brave">Brave</option>
+                <option value="google">Google</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div id="search-container" style="display: none;">
+            <label for="search-bar">Search:</label>
+            <input type="text" id="search-bar" placeholder="Type your search here">
+        </div>
     </div>
 
     <script src="scripts.js"></script>
